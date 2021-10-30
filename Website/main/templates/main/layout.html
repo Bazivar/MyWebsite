@@ -1,0 +1,100 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{% block title %} {% endblock %}</title>
+
+{% block keywords %} {% endblock %}
+
+{% block description %} {% endblock %}
+
+<link href="{% static 'main/css/main.css'%}" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+    
+    <div id="templatemo_header">
+            
+        <div id="site_title">
+            <a href="{% url 'home' %}" target="_parent">Василий
+            	<span>Перевощиков</span>
+                <span class="tagline">Действуй <span>сегодня</span>, чтобы сделать жизнь лучше <span>завтра</span></span>
+            </a>
+        </div> <!-- end of site_title -->
+
+   
+        <div class="cleaner"></div>
+        
+    </div> <!-- end of header -->
+    
+    <div id="templatemo_menu">
+        <ul>
+            {% block links %} {% endblock %}
+        </ul>    	
+
+    </div> <!-- end of templatemo_menu -->
+    
+    <div id="templatemo_main">
+        {% block content %}
+        {% endblock %}
+
+        <div id="templatemo_sidebar">
+
+        	<div id="aboutus">
+            	<h3>Про этот блог</h3>
+                <div class="image_fl"><img src="{% static 'main/png/templatemo_about.jpg'%}" alt="about this blog" /></div>
+                <p>В какой-то момент в жизни я подумал, что все те знания, что я собрал и накопил могут быть полезны кому-то ещё. Например, вам <a href="#" class="continue">далее...</a></p>
+          </div>
+
+            <div class="cleaner_h20"></div>
+
+            <div class="sidebar_box">
+
+            	<h3>Рекомендую посетить</h3>
+
+                <div class="ads_125"><a href="https://www.unibelus.by/" target="_parent"><img src="{% static 'main/png/Unibelus_logo.png'%}" alt="ad 1" /></a></div>
+                <div class="ads_125 odd"><a href="https://www.videomax.ru/" target="_parent"><img src="{% static 'main/png/videomax-logo.png'%}" alt="ad 2" /></a></div>
+
+                <div class="ads_125"><a href="https://davidbombal.com/" target="_parent"><img src="{% static 'main/png/david_bombal_logo.png'%}" alt="ad 3" /></a></div>
+                <div class="ads_125 odd"><a href="https://networkchuck.com/" target="_parent"><img src="{% static 'main/png/network_chuck_logo.jpg'%}" alt="ad 4" /></a></div>
+
+              	<div class="cleaner"></div>
+
+            </div>
+
+            <div class="sidebar_box">
+            	<h3>Мои курсы</h3>
+
+                <ul class="sidebar_menu">
+                    <li><a href="#">&raquo; Проектная документация <span>(2018 г.)</span></a></li>
+                    <li><a href="#">&raquo; Технологии видеоаналитики <span>(2020 г.)</span></a></li>
+                    <li><a href="#">&raquo; Извещатели систем безопасности <span>(не окончен)</span></a></li>
+                  	<li><a href="#">&raquo; Устройства систем безопасности <span>(2015 г.)</span></a></li>
+       		  </ul>
+
+          </div>
+
+        </div>
+
+    	<div class="cleaner"></div>
+
+    </div>
+
+
+</div>
+<div class="cleaner"></div>
+</div>
+
+
+
+<div id="templatemo_copyright">
+     <a href="https://www.linkedin.com/in/bazivar/">Василий Перевощиков © 2021</a>
+</div>
+
+</body>
+</html>
