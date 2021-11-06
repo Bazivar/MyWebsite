@@ -11,7 +11,7 @@
 {% block description %} {% endblock %}
 
 <link href="{% static 'main/css/main.css'%}" rel="stylesheet" type="text/css" />
-
+<link rel="shortcut icon" href="{% static 'main/png/favicon.ico'%}" type="image/x-icon">
 </head>
 <body>
 
@@ -21,13 +21,13 @@
     <div id="templatemo_header">
             
         <div id="site_title">
-            <a href="{% url 'home' %}" target="_parent">Василий
-            	<span>Перевощиков</span>
-                <span class="tagline">Действуй <span>сегодня</span>, чтобы сделать жизнь лучше <span>завтра</span></span>
+            <a href="{% url 'home' %}" target="_parent">
+                Василий <span>Перевощиков</span> <br>
+                <span class="tagline">Learn <span>today</span> for better <span>tomorrow</span></span>
             </a>
         </div> <!-- end of site_title -->
 
-   
+
         <div class="cleaner"></div>
         
     </div> <!-- end of header -->
@@ -57,9 +57,8 @@
 
             	<h3>Рекомендую посетить</h3>
 
-                <div class="ads_125"><a href="https://www.unibelus.by/" target="_parent"><img src="{% static 'main/png/Unibelus_logo.png'%}" alt="ad 1" /></a></div>
-                <div class="ads_125 odd"><a href="https://www.videomax.ru/" target="_parent"><img src="{% static 'main/png/videomax-logo.png'%}" alt="ad 2" /></a></div>
-
+                <div class="ads_125"><a href="https://www.unibelus.by/blog" target="_parent"><img src="{% static 'main/png/Unibelus_logo.png'%}" alt="ad 1" /></a></div>
+                <div class="ads_125 odd"><a href="https://www.videomax.ru/support/posobiya/" target="_parent"><img src="{% static 'main/png/videomax-logo.png'%}" alt="ad 2" /></a></div>
                 <div class="ads_125"><a href="https://davidbombal.com/" target="_parent"><img src="{% static 'main/png/david_bombal_logo.png'%}" alt="ad 3" /></a></div>
                 <div class="ads_125 odd"><a href="https://networkchuck.com/" target="_parent"><img src="{% static 'main/png/network_chuck_logo.jpg'%}" alt="ad 4" /></a></div>
 
@@ -72,7 +71,7 @@
 
                 <ul class="sidebar_menu">
                     <li><a href="#">&raquo; Проектная документация <span>(2018 г.)</span></a></li>
-                    <li><a href="#">&raquo; Технологии видеоаналитики <span>(2020 г.)</span></a></li>
+                    <li><a href="#">&raquo; Системы видеонаблюдения <span>(2020 г.)</span></a></li>
                     <li><a href="#">&raquo; Извещатели систем безопасности <span>(не окончен)</span></a></li>
                   	<li><a href="#">&raquo; Устройства систем безопасности <span>(2015 г.)</span></a></li>
        		  </ul>

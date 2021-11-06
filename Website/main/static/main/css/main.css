@@ -25,8 +25,8 @@ ul { margin: 0; padding: 0; }
 ul li { margin: 0; padding: 0; }
 
 h1, h2, h3, h4, h5, h6 { color: #000; }
-h1 { font-size: 40px; font-weight: normal; margin: 0 0 20px 0; padding: 5px 0; }
-h2 { font-size: 28px; font-weight: normal; margin: 0 0 20px 0; padding: 10px 0 15px 0; }
+h1 { font-size: 30px; font-weight: normal; margin: 0 0 20px 0; padding: 5px 0; line-height: 30px; border-bottom: 1px solid #ddd;}
+h2 { font-size: 25px; font-weight: normal; margin: 0 0 20px 0; padding: 10px 0 15px 0; line-height: 25px;}
 h3 { font-size: 21px; font-weight: normal; margin: 0 0 15px 0; padding: 0; padding: 0 0 10px 0;}
 h4 { font-size: 18px; margin: 0 0 20px 0; padding: 0 0 10px 0; ; }
 h5 { font-size: 16px; margin: 0 0 10px 0; padding: 0; }
@@ -109,8 +109,8 @@ a.continue { color: #F00; font-weight: bold; text-decoration: none; }
 	margin-left: 20px;
 }
 
-#search_box { float: right; width: 280px; height: 30px; }
-#search_box form { clear: both; width: 280px; height: 30px; padding: 0; } 
+#search_box { float: right; width: 280px; height: 10px;}
+#search_box form { clear: both; width: 280px; height: 20px; padding: 0; }
 
 #searchfield { 
 	height: 20px; 
@@ -211,7 +211,8 @@ a.continue { color: #F00; font-weight: bold; text-decoration: none; }
 	width: 620px;
 }
 
-.post_box { clear: both; margin-bottom: 40px; }
+
+.post_box { clear: both; margin-bottom: 40px; border-bottom: 1px solid #ddd;}
 .post_box h2 { margin-bottom: 5px; padding-bottom: 0px; }
 .post_box h2 a { text-decoration: none; }
 
