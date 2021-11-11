@@ -1,0 +1,55 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="Системы безопасности, курсы Перевощикова Василия" />
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Курсы о системах безопасности. Личный сайт Василия Перевощикова. " />
+{% endblock %}
+
+
+{% block links %}
+            <li><a href="{% url 'home' %}" ><span></span>Главная</a></li>
+            <li><a href="{% url 'articles' %}"><span></span>Блог</a></li>
+            <li><a href="{% url 'courses' %}" class="current"><span></span>Курсы</a></li>
+            <li><a href="https://www.youtube.com/user/Boyarder"><span></span>YouTube-канал</a></li>
+            <li><a href="https://www.linkedin.com/in/bazivar/"><span></span>LinkedIn-профиль</a></li>
+            <li><a href="https://github.com/Bazivar"><span></span>GitHub-профиль</a></li>
+            <li><a href="#"><span></span>Обо мне</a></li>
+{% endblock %}
+
+
+{% block content %}
+    <div id="templatemo_content">
+            <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+
+          <div class="post_box">
+                <h2><a href="#">Системы видеонаблюдения</a></h2>
+                <div class="news_meta"> Дата: 2020 г. </div>
+                <div class="image_wrapper"><a href="#" target="_parent"><img src="{% static 'main/png/video_course_image.jpg'%}" alt="" /></a></div>
+              <p align="justify"> Наиболее полный курс, содержащий всё, что касается видеонаблюдения видеоаналитики: <br><br>
+              <ul>
+                  <li>Камеры и оконечные устройства</li>
+                  <li>Источники питания</li>
+                  <li>Устройства передачи данных</li>
+                  <li>Кабеленесущие системы</li>
+                  <li>Телекоммуникационные и электротехнические шкафы</li>
+                  <li>Серверы и видеорегистраторы</li>
+                  <li>Программное обеспечение</li>
+                  <li>Видеоаналитика</li>
+              </ul>
+              <br>
+              Будет интересно всем, кто начинает знакомится с системами видеонаблюдения. Содержит записи лекций и много мемов <br><br>
+          <a href="#" class="continue">Перейти к курсу-></a></p>
+              <div class="cleaner"></div>
+            </div>
+
+        </div>
+
+
+{% endblock %}
+
