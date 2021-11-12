@@ -1,0 +1,52 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="Социальные сети Перевощикова Василия, личный блог" />
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Социальные сети. Личный сайт Василия Перевощикова." />
+{% endblock %}
+
+
+{% block links %}
+            <li><a href="{% url 'home' %}" ><span></span>Главная</a></li>
+            <li><a href="{% url 'articles' %}"><span></span>Блог</a></li>
+            <li><a href="{% url 'courses' %}"><span></span>Курсы</a></li>
+            <li><a href="{% url 'knowledge_base' %}"><span></span>База знаний</a></li>
+            <li><a href="{% url 'projects' %}"><span></span>Мои проекты</a></li>
+            <li><a href="{% url 'social_networks' %}" class="current"><span></span>Я в соцсетях</a></li>
+            <li><a href="{% url 'about' %}"><span></span>Обо мне</a></li>
+{% endblock %}
+
+
+{% block content %}
+    <div id="templatemo_content">
+    <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+        	<div class="post_box">
+
+                <h2>Соцсети или где меня можно найти</h2>
+                <br>
+                <div class="image_wrapper"><img src="{% static 'main/png/my_photo_about.jpg'%}" alt="My photo" /></div>
+              <p align="justify">
+                  <a href="https://www.instagram.com/bazivarro/" target="_parent"><img src="{% static 'main/png/instagram.png'%}" alt="Instagram" /></a>
+                  <a href="https://www.linkedin.com/in/bazivar/" target="_parent"><img src="{% static 'main/png/linkedin.png'%}" alt="LinkedIn" /></a>
+                  <a href="https://www.youtube.com/user/Boyarder" target="_parent"><img src="{% static 'main/png/youtube.png'%}" alt="YouTube" /></a>
+                  <a href="https://github.com/Bazivar" target="_parent"><img src="{% static 'main/png/github.png'%}" alt="GitHub" /></a>
+                  <a href="https://vk.com/vatolen" target="_parent"><img src="{% static 'main/png/vk.jpg'%}" alt="VK" /></a>
+                  <a href="https://www.facebook.com/profile.php?id=100004237086337" target="_parent"><img src="{% static 'main/png/fb.png'%}" alt="Facebook" /></a>
+
+              </p>
+              <div class="cleaner"></div>
+            </div>
+
+
+
+        </div>
+
+
+{% endblock %}
+

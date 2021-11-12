@@ -1,0 +1,126 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="Системы безопасности, проекты Перевощикова Василия" />
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Проекты Перевощикова Василия. Личный сайт Василия Перевощикова. " />
+{% endblock %}
+
+
+{% block links %}
+            <li><a href="{% url 'home' %}" ><span></span>Главная</a></li>
+            <li><a href="{% url 'articles' %}"><span></span>Блог</a></li>
+            <li><a href="{% url 'courses' %}" ><span></span>Курсы</a></li>
+            <li><a href="{% url 'knowledge_base' %}"><span></span>База знаний</a></li>
+            <li><a href="{% url 'projects' %}" class="current"><span></span>Мои проекты</a></li>
+            <li><a href="{% url 'social_networks' %}"><span></span>Я в соцсетях</a></li>
+            <li><a href="{% url 'about' %}"><span></span>Обо мне</a></li>
+{% endblock %}
+
+
+{% block content %}
+    <div id="templatemo_content">
+            <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+
+
+        <div class="post_box">
+                <h2><a href="https://github.com/Bazivar/MyWebsite">Этот сайт</a></h2>
+                <div class="news_meta"> Дата: ноябрь 2021- (в процессе) </div>
+                <div class="image_wrapper"><a href="https://github.com/Bazivar/MyWebsite" target="_parent"><img src="{% static 'main/png/projects_main.png'%}" alt="" /></a></div>
+              <p align="justify"> Создал сам для себя и про себя сайт. Давно думал сделать и вот, наконец, решился.
+                  Сразу решил делать не просто сайт-визитку, а ресурс, который может быть полезен не только мне.
+                  В основе сайта - новостной блог, который я модифицировал для отображения как статей, так и курсов.
+                  Что применялось при создании сайта:
+                  <br><br>
+
+              <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>django</li>
+                  <li>Jinja</li>
+                  <li>Python</li>
+              </ul>
+              <br>
+              Постарался обойтись без базы данных для упрощения себе жизни на бесплатных хостингах. Исходники проекта см. на GitHub <br><br>
+          <a href="https://github.com/Bazivar/MyWebsite" class="continue">Ссылка на GitHub-></a></p>
+              <div class="cleaner"></div>
+            </div>
+
+
+        <div class="post_box">
+                <h2><a href="https://www.unibelus.by/solution/s99">Гибридная электростанция альтернативной энергетики</a></h2>
+                <div class="news_meta"> Дата: сентябрь 2021 - ноябрь 2021 </div>
+                <div class="image_wrapper"><a href="https://www.unibelus.by/solution/s99" target="_parent"><img src="{% static 'main/png/project_solar.jpg'%}" alt="" /></a></div>
+              <p align="justify"> Комплексное техническое решение по созданию солнечной и ветряной электростанции.
+                  Предназначена для питания потребителей при отсутствии внешнего электроснабжения.
+                  Что применялось при создании:
+                  <br><br>
+              <ul>
+                  <li>Данные о солнечной активности в месте установки</li>
+                  <li>Кремниевые солнечные панели</li>
+                  <li>Ветроегнератор на ниодимовых магнитах</li>
+                  <li>Контроллеры солнечных панелей и ветрогенератора</li>
+                  <li>Система мониторинга параметров и удалённого управления</li>
+              </ul>
+              <br>
+              Подробности см. в шаблоне на сайте Унибелус <br><br>
+          <a href="https://www.unibelus.by/solution/s99" class="continue">Ссылка на UNB-шаблон-></a></p>
+              <div class="cleaner"></div>
+            </div>
+
+        <div class="post_box">
+                <h2><a href="https://github.com/Bazivar/WebParser">Веб-парсер информации и файлов с сайтов вендоров</a></h2>
+                <div class="news_meta"> Дата: август 2021- (в процессе) </div>
+                <div class="image_wrapper"><a href="https://github.com/Bazivar/WebParser" target="_parent"><img src="{% static 'main/png/parser.png'%}" alt="" /></a></div>
+              <p align="justify"> Веб-версия приложения для сбора информации с сайтов вендоров.
+                  Применяю в текущей работе для наполнения базы номенклатуры.
+                  Применяемые технологии:
+                  <br><br>
+
+              <ul>
+                  <li>Python</li>
+                  <li>BeautifulSoup</li>
+                  <li>django</li>
+                  <li>Jinja</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+              </ul>
+              <br>
+              Очень помогает ускорить работу по внесению новых позиций в базу. Исходники проекта см. на GitHub <br><br>
+          <a href="https://github.com/Bazivar/WebParser" class="continue">Ссылка на GitHub-></a></p>
+              <div class="cleaner"></div>
+            </div>
+
+        <div class="post_box">
+                <h2><a href="https://github.com/Bazivar/WebParser">Парсер информации и файлов с сайтов вендоров</a></h2>
+                <div class="news_meta"> Дата: май-август 2021 </div>
+                <div class="image_wrapper"><a href="https://github.com/Bazivar/WebParser" target="_parent"><img src="{% static 'main/png/parser_old.jpg'%}" alt="" /></a></div>
+              <p align="justify"> Приложение для сбора информации с сайтов вендоров.
+                  Первая версия решения для помощи себе в текущей работе для наполнения базы номенклатуры.
+                  Применяемые технологии:
+                  <br><br>
+
+              <ul>
+                  <li>Python</li>
+                  <li>BeautifulSoup</li>
+                  <li>Tkinter</li>
+              </ul>
+              <br>
+              В настоящее время разработка прекращена. Исходники проекта см. на GitHub <br><br>
+          <a href="https://github.com/Bazivar/VendorSitesParcer" class="continue">Ссылка на GitHub-></a></p>
+              <div class="cleaner"></div>
+            </div>
+
+
+
+
+        </div>
+
+
+{% endblock %}
+

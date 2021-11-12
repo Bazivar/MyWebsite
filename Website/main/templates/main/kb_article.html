@@ -14,9 +14,9 @@
 
 {% block links %}
             <li><a href="{% url 'home' %}" ><span></span>Главная</a></li>
-            <li><a href="{% url 'articles' %}" class="current"><span></span>Блог</a></li>
+            <li><a href="{% url 'articles' %}" ><span></span>Блог</a></li>
             <li><a href="{% url 'courses' %}"><span></span>Курсы</a></li>
-            <li><a href="{% url 'knowledge_base' %}"><span></span>База знаний</a></li>
+            <li><a href="{% url 'knowledge_base' %}" class="current"><span></span>База знаний</a></li>
             <li><a href="{% url 'projects' %}"><span></span>Мои проекты</a></li>
             <li><a href="{% url 'social_networks' %}"><span></span>Я в соцсетях</a></li>
             <li><a href="{% url 'about' %}"><span></span>Обо мне</a></li>
@@ -25,13 +25,14 @@
 
 {% block content %}
     <div id="templatemo_content">
-        <div class="news_meta"><a href="{% url 'home' %}">Главная</a> - <a href="{% url 'articles' %}">Блог</a></div>
+        <div class="news_meta"><a href="{% url 'home' %}">Главная</a> - <a href="{% url 'knowledge_base' %}">База знаний</a></div>
 
             <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+            <div class="news_meta">{{ description }}</div>
+        <br>
 
         	<div class="post_box pb_last">
                 <div class="image_wrapper"><img src="{{article_image}}" alt="" /></div>
-                <div class="news_meta">Оригинал опубликован в: <a href="{{original}}">{{source}}</a>. Дата публикации: {{date}}</div>
         <br>
               <p align="justify">
                 {% include 'main/articles/article.html' %}

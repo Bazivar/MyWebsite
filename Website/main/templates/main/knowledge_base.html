@@ -1,0 +1,46 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="Системы безопасности, база знаний Перевощикова Василия" />
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="База знаний систем безопасности. Личный сайт Василия Перевощикова. " />
+{% endblock %}
+
+
+{% block links %}
+            <li><a href="{% url 'home' %}" ><span></span>Главная</a></li>
+            <li><a href="{% url 'articles' %}"><span></span>Блог</a></li>
+            <li><a href="{% url 'courses' %}" ><span></span>Курсы</a></li>
+            <li><a href="{% url 'knowledge_base' %}" class="current"><span></span>База знаний</a></li>
+            <li><a href="{% url 'projects' %}"><span></span>Мои проекты</a></li>
+            <li><a href="{% url 'social_networks' %}"><span></span>Я в соцсетях</a></li>
+            <li><a href="{% url 'about' %}"><span></span>Обо мне</a></li>
+{% endblock %}
+
+
+{% block content %}
+    <div id="templatemo_content">
+            <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+        <div class="post_box">
+                <h2><a href="#">Список статей базы знаний</a></h2>
+                <div class="news_meta"> Мини-статьи, небольшие определения и факты о системах безопасности </div>
+                <div class="image_wrapper"><a href="#" target="_parent"><img src="{% static 'main/png/knowledge_base.png'%}" alt="" /></a></div>
+              <p align="justify"> Обо всём понемногу через призму систем безопасности: <br><br>
+              <ul>
+            {% for el in all_kb_articles %}
+                  <li><h3><a href="{{el.url}}">{{ el.article_title }}</a></h3></li>
+            {% endfor %}
+              </ul>
+              <br>
+
+
+              <div class="cleaner"></div>
+            </div>
+</div>
+{% endblock %}
+
