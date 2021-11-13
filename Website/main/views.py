@@ -76,7 +76,7 @@ def article_integration(request):
     article_number = 0
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_articles[article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '\\templates\\main\\articles\\article.html'
+    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/article.html'
     copyfile(src, dst)
 
     data = {
@@ -98,7 +98,7 @@ def article_vulnerabilities (request):
     article_number = 1
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_articles[article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '\\templates\\main\\articles\\article.html'
+    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/article.html'
     copyfile(src, dst)
 
     data = {
@@ -118,7 +118,7 @@ def article_time (request):
     article_number = 3
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_articles[article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '\\templates\\main\\articles\\article.html'
+    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/article.html'
     copyfile(src, dst)
 
     data = {
@@ -139,7 +139,7 @@ def article_solar (request):
     article_number = 2
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_articles[article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '\\templates\\main\\articles\\article.html'
+    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/article.html'
     copyfile(src, dst)
 
     data = {
@@ -163,7 +163,7 @@ def kb_cmos (request):
     kb_article_number = 0
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_kb_articles[kb_article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '\\templates\\main\\articles\\article.html'
+    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/article.html'
     copyfile(src, dst)
 
     data = {
