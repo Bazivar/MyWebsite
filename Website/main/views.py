@@ -158,12 +158,12 @@ def article_solar (request):
 
 
 
-######################## Article about solar power plant calculation.#####################################
+######################## KB_CMOS.#####################################
 def kb_cmos (request):
     kb_article_number = 0
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_kb_articles[kb_article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/article.html'
+    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/kb.html'
     copyfile(src, dst)
 
     data = {
