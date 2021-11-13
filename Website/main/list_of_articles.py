@@ -12,7 +12,7 @@ all_articles = [
     'url': 'articles/article_integration',
     'page_title': 'Интеграция систем безопасности - Василий Перевощиков',
     'keywords': 'Интеграция, системы безопасности, пожарная сигнализация, контроль доступа, видеонаблюдение',
-    'html_page': '\\templates\\main\\articles\\integration.html',
+    'html_page': '/templates/main/articles/integration.html',
      },
 
 #Article #1
@@ -25,7 +25,7 @@ all_articles = [
      'url': 'articles/article_vulnerabilities',
      'page_title': 'Уязвимости систем безопасности - Василий Перевощиков',
      'keywords': 'Уязвимости, системы безопасности, КЭСБ, программное обеспечение',
-     'html_page': '\\templates\\main\\articles\\vulnerabilities.html',
+     'html_page': '/templates/main/articles/vulnerabilities.html',
      },
 
 #Article #2
@@ -38,7 +38,7 @@ all_articles = [
   'url': 'articles/article_solar',
   'page_title': 'Расчёт солнечной электростанции - Василий Перевощиков',
   'keywords': 'Солнечные панели, системы безопасности, Источник питания, аккумуляторные батареи, солнечная электростанция, методика расчёта, расчёт, метод расчёта для проекта, солнечная энергетика, альтернативная энергетика, альтернативные источники питания',
-  'html_page': '\\templates\\main\\articles\\solar.html',
+  'html_page': '/templates/main/articles/solar.html',
   },
 
 
@@ -52,7 +52,7 @@ all_articles = [
      'url': 'articles/article_time',
      'page_title': 'Расчёт аккумуляторов - Василий Перевощиков',
      'keywords': 'ИБП, системы безопасности, Источник питания, аккумуляторные батареи, аккумуляторы, методика расчёта, расчёт, метод расчёта для проекта',
-     'html_page': '\\templates\\main\\articles\\time.html',
+     'html_page': '/templates/main/articles/time.html',
      },
 
 

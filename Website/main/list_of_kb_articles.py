@@ -8,7 +8,7 @@ all_kb_articles = [
     'url': 'knowledge_base/cmos',
     'page_title': 'КМОП-матрица - база знаний Василий Перевощиков',
     'keywords': 'КМОП, матрица, сенсор видеонаблюдения, светочувствительный сенсор, видеонаблюдение',
-    'html_page': '\\templates\\main\\knowledge_base\\cmos.html',
+    'html_page': '/templates/main/knowledge_base/cmos.html',
      },
 
 
