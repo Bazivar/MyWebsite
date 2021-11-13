@@ -76,8 +76,7 @@ def article_integration(request):
     article_number = 0
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_articles[article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/article.html'
-    copyfile(src, dst)
+
 
     data = {
         'title': all_articles[article_number]['page_title'],
@@ -88,6 +87,7 @@ def article_integration(request):
         'original': all_articles[article_number]['original'],
         'source': all_articles[article_number]['source'],
         'date': all_articles[article_number]['date'],
+        'src': src,
     }
     return render(request, 'main/single_article.html', data)
 
@@ -98,8 +98,7 @@ def article_vulnerabilities (request):
     article_number = 1
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_articles[article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/article.html'
-    copyfile(src, dst)
+
 
     data = {
         'title': all_articles[article_number]['page_title'],
@@ -110,6 +109,7 @@ def article_vulnerabilities (request):
         'original': all_articles[article_number]['original'],
         'source': all_articles[article_number]['source'],
         'date': all_articles[article_number]['date'],
+        'src': src,
     }
     return render(request, 'main/single_article.html', data)
 
@@ -118,8 +118,7 @@ def article_time (request):
     article_number = 3
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_articles[article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/article.html'
-    copyfile(src, dst)
+
 
     data = {
         'title': all_articles[article_number]['page_title'],
@@ -130,6 +129,7 @@ def article_time (request):
         'original': all_articles[article_number]['original'],
         'source': all_articles[article_number]['source'],
         'date': all_articles[article_number]['date'],
+        'src': src,
     }
     return render(request, 'main/single_article.html', data)
 
@@ -139,8 +139,6 @@ def article_solar (request):
     article_number = 2
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_articles[article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/article.html'
-    copyfile(src, dst)
 
     data = {
         'title': all_articles[article_number]['page_title'],
@@ -151,6 +149,7 @@ def article_solar (request):
         'original': all_articles[article_number]['original'],
         'source': all_articles[article_number]['source'],
         'date': all_articles[article_number]['date'],
+        'src': src,
     }
     return render(request, 'main/single_article.html', data)
 
@@ -163,8 +162,7 @@ def kb_cmos (request):
     kb_article_number = 0
     #copying article to a html file that will be included on page
     src = os.path.dirname(os.path.realpath(__file__)) + all_kb_articles[kb_article_number]['html_page']
-    dst = os.path.dirname(os.path.realpath(__file__)) + '/templates/main/articles/kb.html'
-    copyfile(src, dst)
+
 
     data = {
         'title': all_kb_articles[kb_article_number]['page_title'],
@@ -172,6 +170,7 @@ def kb_cmos (request):
         'description': all_kb_articles[kb_article_number]['description'],
         'keywords': all_kb_articles[kb_article_number]['keywords'],
         'article_image': all_kb_articles[kb_article_number]['image'],
+        'src': src,
     }
     return render(request, 'main/kb_article.html', data)
 
