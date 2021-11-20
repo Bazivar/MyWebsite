@@ -11,13 +11,19 @@ urlpatterns = [
     path('about', views.about, name = 'about'),
 
     #articles
-    path('articles/article_integration', views.article_integration, name = 'article_integration'),
-    path('articles/article_vulnerabilities', views.article_vulnerabilities, name = 'article_vulnerabilities'),
-    path('articles/article_time', views.article_time, name = 'article_time'),
-    path('articles/article_solar', views.article_solar, name = 'article_solar'),
+    path('articles/article_integration', views.article, {'article_number': 'integration'}, name = 'article_integration'),
+    path('articles/article_vulnerabilities', views.article, {'article_number': 'vulnerabilities'}, name = 'article_vulnerabilities'),
+    path('articles/article_time', views.article, {'article_number': 'time'}, name = 'article_time'),
+    path('articles/article_solar', views.article, {'article_number': 'solar'}, name = 'article_solar'),
 
     #courses
 
     #kb_articles
-    path('knowledge_base/cmos', views.kb_cmos, name = 'cmos'),
+    path('knowledge_base/cmos', views.kb_article, {'kb_article_number' : 'cmos'}, name = 'cmos'),
+    path('knowledge_base/analog_video', views.kb_article, {'kb_article_number' : 'analog_video'}, name = 'analog_video'),
+    path('knowledge_base/ip_video', views.kb_article, {'kb_article_number' : 'ip_video'}, name = 'ip_video'),
+    path('knowledge_base/structure_cabling', views.kb_article, {'kb_article_number' : 'structure_cabling'}, name = 'structure_cabling'),
+    path('knowledge_base/cable_trays', views.kb_article, {'kb_article_number' : 'cable_trays'}, name = 'cable_trays'),
+    path('knowledge_base/ups_system', views.kb_article, {'kb_article_number' : 'ups_system'}, name = 'ups_system'),
+    path('knowledge_base/disk_system', views.kb_article, {'kb_article_number' : 'disk_system'}, name = 'disk_system'),
 ]

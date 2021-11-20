@@ -27,9 +27,9 @@
     <div id="templatemo_content">
             <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
         <div class="post_box">
-                <h2><a href="#">Список статей базы знаний</a></h2>
+                <h2>Список статей базы знаний</h2>
                 <div class="news_meta"> Мини-статьи, небольшие определения и факты о системах безопасности </div>
-                <div class="image_wrapper"><a href="#" target="_parent"><img src="{% static 'main/png/knowledge_base.png'%}" alt="" /></a></div>
+                <div class="image_wrapper"><img src="{% static 'main/png/knowledge_base.png'%}" alt="" width=600/></div>
               <p align="justify"> Обо всём понемногу через призму систем безопасности: <br><br>
               <ul>
             {% for el in all_kb_articles %}
