@@ -1,0 +1,56 @@
+{% extends 'main/layout_en.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="Security systems, Vasily Perevoshchikov, personal blog" />
+{%endblock%}
+
+{% block description %}
+<meta name="description" content="Vasily Perevoshchikov's personal website. Welcome" />
+{%endblock%}
+
+
+{% block links %}
+            <li><a href="{% url 'home_en' %}" class="current"><span></span>Home</a></li>
+            <li><a href="{% url 'articles_en' %}"><span></span>Blog</a></li>
+            <li><a href="{% url 'courses_en' %}"><span></span>Courses</a></li>
+            <li><a href="{% url 'knowledge_base_en' %}"><span></span>Knowledge Base</a></li>
+            <li><a href="{% url 'projects_en' %}"><span></span>My projects</a></li>
+            <li><a href="{% url 'social_networks_en' %}"><span></span>Me in social networks</a></li>
+            <li><a href="{% url 'about_en' %}"><span></span>About me</a></li>
+{%endblock%}
+
+
+{% block content %}
+    <div id="templatemo_content">
+    <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+        <div class="post_box">
+
+                <h2>Hello! Thank you for visit</h2>
+                <br>
+                <div class="image_wrapper"><img src="{% static 'main/png/my_photo.jpg'%}" alt="My photo" /></div>
+              <p align="justify">
+                  I've created this site in order to tell about myself and  everything that I've created. <br>
+                  <br>
+                  Here you can find information about me, my articles and techniques for designing security systems,
+                  various courses and everything that seems interesting to me.<br>
+                  <br>
+                  If you are a <span>student</span> then you should take a look at <a href="{% url 'courses_en' %}"><span>Courses</span></a> and <a href=" {% url 'knowledge_base' %}"><span>Knowledge base</span></a><br>
+                  <br>
+                  If you are my <span>designer</span> or <span>engineer</span> colleague, check out <a href="{% url 'articles_en' %}"><span>Blog</span></a><br>
+                  <br>
+                  If you're just wondering who I really am and why I started my site, then take a look at the section <a href="{% url 'about_en' %}"><span>About Me</span></a> <br>
+                  <br>
+                  The site is still under development, so it may seem a little empty, but I'm working on it :)
+              </p>
+              <div class="cleaner"></div>
+            </div>
+
+
+
+        </div>
+
+
+{%endblock%}

@@ -1,0 +1,114 @@
+{% extends 'main/layout_en.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="Security systems, Vasily Perevoshchikov courses" />
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Courses about security systems. Personal site of Vasily Perevoshchikov. " />
+{% endblock %}
+
+
+{% block links %}
+             <li><a href="{% url 'home_en' %}" ><span></span>Home</a></li>
+             <li><a href="{% url 'articles_en' %}"><span></span>Blog</a></li>
+             <li><a href="{% url 'courses_en' %}" class="current"><span></span>Courses</a></li>
+             <li><a href="{% url 'knowledge_base_en' %}"><span></span>Knowledge Base</a></li>
+             <li><a href="{% url 'projects_en' %}"><span></span>My projects</a></li>
+             <li><a href="{% url 'social_networks_en' %}"><span></span>Me in social networks</a></li>
+             <li><a href="{% url 'about_en' %}"><span></span>About me</a></li>
+{% endblock %}
+
+
+{% block content %}
+    <div id="templatemo_content">
+            <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+
+
+<div class="post_box">
+                <h2><a href="https://www.youtube.com/watch?v=Y5u7KWTT4fw&list=PLp4hMyvI4YHhCQ05OrN61kQsTgHvEY3by">Security detectors</a></h2>
+                <div class="news_meta"> Date: 2020- (not finished) </div>
+                <div class="image_wrapper"><a href="https://www.youtube.com/watch?v=Y5u7KWTT4fw&list=PLp4hMyvI4YHhCQ05OrN61kQsTgHvEY3by" target="_parent"><img src="{% static 'main/png/course_detectors.jpg'%}" alt=""/></a></div>
+              <p align="justify"> Course-review on the types and principles of operation of security sensors: <br><br>
+              <ul>
+                  <li>Security detectors</li>
+                  <li>Detectors for perimeter security systems</li>
+                  <li>Fire detectors</li>
+                  <li>Process sensors and meters</li>
+              </ul>
+              <br>
+              It will interested by anyone who is starting to get acquainted with security systems. Contains lecture notes. Not finished <br><br>
+          <a href="https://www.youtube.com/watch?v=Y5u7KWTT4fw&list=PLp4hMyvI4YHhCQ05OrN61kQsTgHvEY3by" class="continue">Go to course-></a>
+              <div class="cleaner"></div>
+            </div>
+
+        <div class="post_box">
+                <h2><a href="https://www.youtube.com/watch?v=a6YiMu45ppM&list=PLp4hMyvI4YHgU_-QZUxYhvSZAUlFlj5Jn">CCTV systems</a></h2>
+                <div class="news_meta"> Date: 2020</div>
+                <div class="image_wrapper"><a href="https://www.youtube.com/watch?v=a6YiMu45ppM&list=PLp4hMyvI4YHgU_-QZUxYhvSZAUlFlj5Jn" target="_parent"><img src="{% static 'main/png/video_course_image.jpg'%}" alt="" /></a></div>
+              <p align="justify"> The most comprehensive course covering everything related to video surveillance video analytics: <br><br>
+              <ul>
+                  <li>Cameras and end devices</li>
+                  <li>Power supplies</li>
+                  <li>Data communication devices</li>
+                  <li>Cable support systems</li>
+                  <li>Telecommunication and electrical cabinets</li>
+                  <li>Servers and DVRs</li>
+                  <li>Software</li>
+                  <li>Video analytics</li>
+              </ul>
+              <br>
+              It will interested by anyone who is starting to get acquainted with video surveillance systems. Contains lecture notes and many memes <br><br>
+          <a href="https://www.youtube.com/watch?v=a6YiMu45ppM&list=PLp4hMyvI4YHgU_-QZUxYhvSZAUlFlj5Jn" class="continue">Go to course-></a>
+              <div class="cleaner"></div>
+            </div>
+
+        <div class="post_box">
+                <h2><a href="#">Project documentation</a></h2>
+                <div class="news_meta"> Date: 2018</div>
+                <div class="image_wrapper"><a href="#" target="_parent"><img src="{% static 'main/png/course_design.jpg'%}" alt="" /></a ></div>
+              <p align="justify"> Course on Design Documentation for Security Systems. The creation of project documentation is being considered
+                  in the nanoCAD OPS program. Includes: <br><br>
+              <ul>
+                  <li>Composition of project documentation</li>
+                  <li>Hardware layout</li>
+                  <li>Structure diagram</li>
+                  <li>Connection diagram</li>
+              </ul>
+              <br>
+              The course is outdated, but the basic approaches have not changed. It will be useful for novice designers and students <br><br>
+          <a href="#" class="continue">Go to course-></a>
+              <div class="cleaner"></div>
+            </div>
+
+
+        <div class="post_box">
+                <h2><a href="#">Security system devices</a></h2>
+                <div class="news_meta"> Date: 2015</div>
+                <div class="image_wrapper"><a href="#" target="_parent"><img src="{% static 'main/png/course_security.jpg'%}" alt="" /></a ></div>
+              <p align="justify"> Course in security devices: from sensors to CCTV cameras. Was kind of an attempt to cover everything
+                  However, it was compiled a long time ago and is already outdated. Course content:<br><br>
+              <ul>
+                  <li>Integrated security systems</li>
+                  <li>Uninterruptible power supplies</li>
+                  <li>Data networks</li>
+                  <li>Storage systems</li>
+                  <li>Access control systems</li>
+                  <li>CCTV systems</li>
+                  <li>Fire alarm systems</li>
+                  <li>Intrusion alarm systems</li>
+              </ul>
+              <br>
+              The course is out of date. It should be studied through the prism of this fact <br><br>
+          <a href="#" class="continue">Go to course-></a>
+              <div class="cleaner"></div>
+            </div>
+
+        </div>
+
+
+{% endblock %}
+

@@ -1,0 +1,98 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en" data-url="#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{% block title %} {% endblock %}</title>
+
+{% block keywords %} {% endblock %}
+
+{% block description %} {% endblock %}
+<link href="{% static 'main/css/main.css'%}" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="{% static 'main/png/favicon.ico'%}">
+</head>
+<body>
+
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+
+    <div id="templatemo_header">
+
+        <div id="site_title">
+            <a href="{% url 'home_en' %}" target="_parent">
+                Vasily <span>Perevoshchikov</span> <br>
+                <span class="tagline">What are you doing <span>today</span> to make your life better <span>tomorrow</span>?</span>
+            </a>
+        </div> <!-- end of site_title -->
+
+        <div id="search_box"><a href="{% url 'home' %}">Русскоязычная версия</a></div>
+
+        <div class="cleaner"></div>
+
+    </div> <!-- end of header -->
+
+    <div id="templatemo_menu">
+        <ul>
+            {% block links %} {% endblock %}
+        </ul>
+
+    </div> <!-- end of templatemo_menu -->
+
+    <div id="templatemo_main">
+        {% block content %}
+        {%endblock%}
+
+        <div id="templatemo_sidebar">
+
+        <div id="aboutus">
+            <h3>About this blog</h3>
+                <div class="image_fl"><img src="{% static 'main/png/templatemo_about.jpg'%}" alt="about this blog" /></div>
+                <p>At some point, I thought that all the knowledge that I had collected and accumulated could be useful to someone else. You for example <a href="{% url 'about_en' %}" class="continue">next...</a></p>
+          </div>
+
+            <div class="cleaner_h20"></div>
+
+            <div class="sidebar_box">
+
+            <h3>I recommend visiting</h3>
+
+                <div class="ads_125"><a href="https://www.unibelus.by/blog" target="_parent"><img src="{% static 'main/png/Unibelus_logo.png'%} "alt="ad 1" /></a></div>
+                <div class="ads_125 odd"><a href="https://www.videomax.ru/support/posobiya/" target="_parent"><img src="{% static 'main/png/videomax-logo.png'%}" alt="ad 2" /></a></div>
+                <div class="ads_125"><a href="https://davidbombal.com/" target="_parent"><img src="{% static 'main/png/david_bombal_logo.png'%}" alt= "ad 3" /></a></div>
+                <div class="ads_125 odd"><a href="https://networkchuck.com/" target="_parent"><img src="{% static 'main/png/network_chuck_logo.jpg'%}" alt ="ad 4" /></a></div>
+
+              <div class="cleaner"></div>
+
+            </div>
+
+            <div class="sidebar_box">
+            <h3><a href="{% url 'projects_en' %}">My best projects</a></h3>
+
+                <ul class="sidebar_menu">
+                    <li><a href="http://proekt.by/sistemi_bezopasnosti-b9.0/ukomplektovannie_shkafi_dlya_videonablyudeniya_davaiyte_obsudim-t64713.0.html">&raquo; Outdoor cabinet for video surveillance systems</a></li>
+                    <li><a href="https://www.unibelus.by/solution/s99">&raquo; Hybrid power plant</a></li>
+                    <li><a href="https://github.com/Bazivar/WebParser">&raquo; Web parser with django and beautifulsoup</a></li>
+                  <li><a href="https://www.youtube.com/user/Boyarder">&raquo; My YouTube channel</a></li>
+       </ul>
+
+          </div>
+
+        </div>
+
+    <div class="cleaner"></div>
+
+    </div>
+
+
+</div>
+<div class="cleaner"></div>
+</div>
+
+
+
+<div id="templatemo_copyright">
+     <a href="https://www.linkedin.com/in/bazivar/">© Vasily Perevoshchikov</a>
+</div>
+
+</body>
+</html>

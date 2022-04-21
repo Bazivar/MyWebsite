@@ -109,7 +109,9 @@ a.continue { color: #F00; font-weight: bold; text-decoration: none; }
 	margin-left: 20px;
 }
 
-#search_box { float: right; width: 280px; height: 10px;}
+#search_box div { float: right; width: 280px; height: 20px; color: white;}
+#search_box a:visited { color:white}
+
 #search_box form { clear: both; width: 280px; height: 20px; padding: 0; }
 
 #searchfield { 

@@ -1,0 +1,46 @@
+{% extends 'main/layout_en.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="{{keywords}}" />
+{% endblock %}
+
+{% block description %}
+<meta name="description" content= "{{description}}" />
+{% endblock %}
+
+
+{% block links %}
+            <li><a href="{% url 'home_en' %}" ><span></span>Home</a></li>
+             <li><a href="{% url 'articles_en' %}" class="current"><span></span>Blog</a></li>
+             <li><a href="{% url 'courses_en' %}"><span></span>Courses</a></li>
+             <li><a href="{% url 'knowledge_base_en' %}"><span></span>Knowledge Base</a></li>
+             <li><a href="{% url 'projects_en' %}"><span></span>My projects</a></li>
+             <li><a href="{% url 'social_networks_en' %}"><span></span>Me in social networks</a></li>
+             <li><a href="{% url 'about_en' %}"><span></span>About me</a></li>
+{% endblock %}
+
+
+{% block content %}
+    <div id="templatemo_content">
+         <div class="news_meta"><a href="{% url 'home_en' %}">Home</a> - <a href="{% url 'articles_en' %}">Blog</a></div>
+
+             <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+
+         <div class="post_box pb_last">
+                 <div class="image_wrapper"><img width=600 src="{{article_image}}" alt="" /></div>
+                 <div class="news_meta">Original: <a href="{{original}}">{{source}}</a>. Date: {{date}}</div>
+         <br>
+               <p align="justify">
+                 {% include src %}
+               </p>
+
+               <div class="cleaner"></div>
+             </div>
+
+         </div>
+
+
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'main/layout_en.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="Vasily Perevoshchikov: about me - personal site" />
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Vasily Perevoshchikov. About me" />
+{% endblock %}
+
+
+{% block links %}
+            <li><a href="{% url 'home_en' %}" ><span></span>Home</a></li>
+            <li><a href="{% url 'articles_en' %}"><span></span>Blog</a></li>
+            <li><a href="{% url 'courses_en' %}"><span></span>Courses</a></li>
+            <li><a href="{% url 'knowledge_base_en' %}"><span></span>Knowledge Base</a></li>
+            <li><a href="{% url 'projects_en' %}"><span></span>My projects</a></li>
+            <li><a href="{% url 'social_networks_en' %}"><span></span>Me in social networks</a></li>
+            <li><a href="{% url 'about_en' %}" class="current"><span></span>About me</a></li>
+{% endblock %}
+
+
+{% block content %}
+    <div id="templatemo_content">
+    <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+        <div class="post_box">
+
+                <h2>Let's get acquainted!</h2>
+                <br>
+                <div class="image_wrapper"><img src="{% static 'main/png/my_sn_photo.jpg'%}" alt="My photo" /></div>
+              <p align="justify">
+                  Hi! <br>
+                  My name is Vasily and I am an engineer. <i>*clap-clap-clap*</i> <br><br>
+                  I have been working since 2013 in the field of physical security systems and I think I know some things in this area, for example: <br>
+                  Development of technical solutions for security, fire and technological alarm systems, access control, video surveillance, public anouncement and sound systems, data transmission, power systems, etc.
+                  <br>I know how to prepare design documentation, perform commissioning, system integration of security systems.
+                  <br><br> I maintain my own <a href="https://www.youtube.com/user/Boyarder/videos">YouTube channel</a>, where I post recordings of lectures, reviews of equipment and technologies in the field of systems security.
+                  <br> <span>For example, the most popular video on the channel - take a look, you may like it:</span><br>
+                  <iframe width="600" height="400" src="https://www.youtube.com/embed/ccIyZXUS880" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard- write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <br> <br>I also participated in the training of the customer's personnel, preparation of tender and commercial proposals, technical support, presentations and seminars.
+                  <br> <span>My presentation at the seminar at the "Security Center" exhibition in Minsk: </span><br>
+                  <iframe width="600" height="400" src="https://www.youtube.com/embed/GP-LJeyuqoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <br>
+                  <br>
+                  In addition, I've worked in the following areas:
+                  <ul>
+                    <li>Pre-sales consultations and development of technical solutions for security systems.</li>
+                    <li>Customer support. </li>
+                    <li>Preparation of the technical part of tender proposals. </li>
+                    <li>Analysis of segments of the security systems market. </li>
+                    <li>Search and market launch of new technical means and systems. </li>
+                    <li>Writing technical documentation.</li>
+                    <li>Developing a strategy for the company in the field of promoting technical equipment.</li>
+                    <li>Developing new fields of interest for the company.</li>
+                    <li>Managing the creation of the company's products</li>
+                    <li>Managing the launch and promotion of the company's products</li>
+                </ul>
+                <br>
+                From 2014 to 2020 I was a teacher at BSUIR in the following courses:
+                <ul>
+                    <li>Technical means of security systems</li>
+                    <li>Design of electronic security systems</li>
+                    <li>Design and construction documentation</li>
+                    <li>Video Analytics Technologies</li>
+                    <li>Sensors for electronic security systems</li>
+                </ul>
+                <br>
+                Twice proud cat owner
+                <div class="image_wrapper"><img src="{% static 'main/png/cats.jpg'%}" alt="My cats" /></div>
+                <br><br>
+                Since 2021, I have been actively developing in programming. I've learned Python with some basics in django. Thanks to it I've created this website.
+                I've also touched these things: CSS, HTML, Jinja, PyCharm, XML, WebScrapping, GitHub, etc. <br>
+                <br>My skills:
+                <ul>
+                    <li>English - C2 (Proficient). <a href="https://www.efset.org/cert/yeAyik"><span>Certificate Link</span></a></li>
+                    <li>HTML is self-taught. <a href="https://www.sololearn.com/Certificate/1014-21765890/jpg/"><span>Certificate Link</span></a></li>
+                    <li>Python Core is self-taught. <a href="https://www.sololearn.com/certificates/course/en/21765890/1073/landscape/png"><span>Certificate Link</span></a></li>
+                    <li>Python Data Structures is self-taught. <a href="https://www.sololearn.com/certificates/course/en/21765890/1159/landscape/png"><span>Certificate Link</span></a></li>
+                    <li>SQL (MySQL) is self-taught. <a href="https://www.sololearn.com/certificates/course/en/21765890/1060/landscape/png"><span>Certificate Link</span></a></li>
+                    <li>django is self-taught. <a href="https://github.com/Bazivar/MyWebsite"><span>Project Link</span></a></li>
+                </ul>
+                <br>
+                I make projects for myself and for work.
+                <br><br>
+                I consider programming a kind of magic, which is an important goal to master. I set myself the goal of developing in this direction. I think I've started well. Let's see how it goes on.
+                <br>
+                <br>
+                I regularly find new interesting directions for self-development. Hope it stays that way
+                <div class="image_wrapper"><img src="{% static 'main/png/my_photo_at_sea.jpg'%}" alt="My thoughts" /></div>
+                <br>
+                What are you doing <span>today</span> to make your life better <span>tomorrow</span>?
+
+              <div class="cleaner"></div>
+            </div>
+
+
+
+        </div>
+
+
+{% endblock %}
+

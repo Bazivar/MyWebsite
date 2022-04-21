@@ -1,0 +1,45 @@
+{% extends 'main/layout_en.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="Security systems, Vasily Perevoshchikov, feature articles" />
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Articles about the security systems. Personal site of Vasily Perevoshchikov." />
+{% endblock %}
+
+
+{% block links %}
+             <li><a href="{% url 'home_en' %}" ><span></span>Home</a></li>
+             <li><a href="{% url 'articles_en' %}" class="current"><span></span>Blog</a></li>
+             <li><a href="{% url 'courses_en' %}"><span></span>Courses</a></li>
+             <li><a href="{% url 'knowledge_base_en' %}"><span></span>Knowledge Base</a></li>
+             <li><a href="{% url 'projects_en' %}"><span></span>My projects</a></li>
+             <li><a href="{% url 'social_networks_en' %}"><span></span>Me in social networks</a></li>
+             <li><a href="{% url 'about_en' %}"><span></span>About me</a></li>
+{% endblock %}
+
+
+{% block content %}
+    <div id="templatemo_content">
+            <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+
+
+        {% for el in all_articles %}
+          <div class="post_box">
+                <h2><a href="{{el.url}}">{{ el.article_title }}</a></h2>
+                <div class="news_meta">Link to original <a href="{{ el.original }}">{{ el.source }}</a>. Date: {{ el.date }} </div>
+                <div class="image_wrapper"><a href="{{ el.url }}" target="_parent"><img width=600 src="{{ el.image }}" alt="" /></a></div>
+              <p align="justify"> {{ el.description }} <br> <a href="{{ el.url }}" class="continue">Continue ...</a></p>
+              <div class="cleaner"></div>
+            </div>
+        {% endfor %}
+
+        </div>
+
+
+{% endblock %}
+

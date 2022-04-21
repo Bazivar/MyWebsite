@@ -1,0 +1,167 @@
+<p>When implementing security systems for large facilities, the integration of subsystems with each other using software has become a mandatory requirement. Each specific CSF may change: some subsystems may be excluded or replaced with new ones.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>The main features of an integrated security system.</p>
+<p><strong>1. </strong>Unified system for collecting, processing and presenting data, monitoring and managing all subsystems.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>2.</strong> Possibility to set the required action scenarios of any complexity in response to various events in the system. An event in the system is understood as everything that happens in the system: motion detection by the video monitoring subsystem, alarm of fire and security alarm sensors, the fact of passing through doors controlled by the access control subsystem, etc. An action is everything that can be done in the system: turn on the camera for recording, issue a warning to the operator, turn on the alarm, arm / disarm sensors, block all doors, etc. In response to an event or a certain set of events, you can define any set of system actions - a script. Moreover, using a special scripting language, you can define an arbitrarily complex system reaction to events.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>3.</strong> The ability to integrate any equipment and subsystem, regardless of device type and manufacturer. Integration is carried out through exchange protocols, driver programs, controllers.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>4. </strong>Modularity and open interfaces. The system can be easily expanded both by including new modules and by integrating the system with existing computerized enterprise systems. Additional modules may be developed by security system manufacturers.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>5.</strong> Scalability - no restrictions on the scale of the protected object and the ability to connect any number of workplaces.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>6. </strong>The multi-level (hierarchical) structure of the system makes it possible to rationally distribute information flows between enterprise departments and thereby minimize the amount of transmitted data. Each division receives only those messages that correspond to the official duties and level of responsibility. An alarm message can only be transmitted to the next level of the system if there is no reaction from the responsible personnel after the allowed time has elapsed.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Designing a modern integrated security system often requires the integration of systems with each other. Each type of integration has its own characteristics and applicability for solving a particular problem.</p>
+
+<p>Let's single out three main types of subsystem integration in a complex security system.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>1. Hardware integration. </strong>Represents the interaction of subsystems at the instrument level, usually without the use of software. In the simplest case, interaction at the hardware level is carried out through relay outputs: the relay of the device of one subsystem affects the inputs of the sensors of the device of another. For example, when a fire alarm system is triggered, a specially configured relay is triggered on the control panel, closing or opening contacts on the fire alarm line of the access controller, which, in turn, goes into fire alarm mode and opens a free passage.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>2. Software integration. </strong>Represents the interaction of security subsystem software with each other. The software integration method is used in cases where integrating systems at the hardware level is either unreasonably difficult or impractical. As a rule, ACS and video surveillance systems are integrated in this way. The subsystems interact with each other via the TCP / IP protocol via a local network.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>3. Hardware-software integration. </strong>This is a mixed case where the hardware of one subsystem is controlled from the software of another. This is how video surveillance systems or access control systems are usually integrated with an alarm system. Interaction is carried out via interface lines using standard protocols (TCP/IP, Modbus, etc.). In this case, special devices are required that combine the subsystems - interface converters, adapters, etc.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>The most common variant of integration links that unite security subsystems is the following.</p>
+
+<p><strong><em>Fire automation systems</em></strong> are interconnected only with the help of hardware integration as one of the simplest and most reliable. The following scenario is being implemented: the fire alarm system is triggered. From the receiving control the device sends a signal to the device of the warning and evacuation control system, where the evacuation warning program is triggered. The sound accompaniment and the announcement of a fire through the loudspeakers of the warning system are turned on. In the same way, a signal is sent to the MES control panel using a system of alarm messages via a GSM channel or telephony. Next, the smoke exhaust system is activated, which also received a signal from the fire alarm system. After the time required for the evacuation of personnel and calculated at the stage of commissioning of the system, the fire extinguishing system is activated.</p>
+
+<p>In addition to integrating fire automation systems with each other, it is required to ensure interaction with at least a <strong><em>access control and management system.</em></strong><em> </em>For this, a signal from a fire alarm system the alarm goes to the controllers or the server of the access control and management system, which opens the access points to a free passage mode to ensure quick evacuation of personnel. In this case, it is also advisable to use hardware integration at the relay level due to high reliability and simplicity. When a fire alarm arrives at the access control system server, an alarm event is generated and transmitted to the <strong><em>video surveillance system</em></strong> using software integration links that can perform the following actions:</p>
+
+<p>1. Using the incoming image from surveillance cameras, assess it for the presence of fire and smoke and display the camera data on the full screen to the security service, also start a permanent recording of events.</p>
+
+<p>2. Display video images of evacuation routes and exits for the possibility of controlling the PA when using SO-4 and SO-5 and start permanent recording of the signal from these cameras.</p>
+
+<p>3. Display the image from the associated video camera when calling from the feedback panel of the PA.</p>
+
+<p>4. Enable continuous recording from video cameras installed in specially protected premises to register possible actions of intruders in the current turmoil.</p>
+
+<p>&nbsp;</p>
+
+
+<p>In another scenario, when the alarm system is triggered, the following actions can be performed:</p>
+
+<p>1. The <strong><em>security alarm</em></strong> signal is transmitted to the central monitoring station of the security department and the task force leaves.</p>
+
+<p>2. <strong><em>Access control and management system</em></strong> blocks access points leading to the premises where the alarm has gone off and can be opened by the responsible guard.</p>
+
+<p>3. <strong><em>CCTV</em></strong> puts video cameras into continuous recording mode in all corridors and the room where the alarm has been triggered and displays the image from these cameras on the monitor.</p>
+
+<p>&nbsp;</p>
+
+<p>Similar scenarios available when using various integration methods can improve the overall effectiveness of security systems. Making a decision on the use of one or another integration method requires an understanding of the opportunities that this or that integration provides for each specific security system. At the same time, it is important not to lose sight of the problem that needs to be solved using integration.</p>
+
+<p>When implementing security systems for large facilities, the integration of subsystems with each other using software has become a mandatory requirement. Each specific CSF may change: some subsystems may be excluded or replaced with new ones.</p>
+
+<p>&nbsp;</p>
+
+
+<p>&nbsp;</p>
+
+<p>The main features of an integrated security system.</p>
+
+<p><strong>1. </strong>Unified system for collecting, processing and presenting data, monitoring and managing all subsystems.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>2.</strong> Possibility to set the required action scenarios of any complexity in response to various events in the system. An event in the system is understood as everything that happens in the system: motion detection by the video monitoring subsystem, alarm of fire and security alarm sensors, the fact of passing through doors controlled by the access control subsystem, etc. An action is everything that can be done in the system: turn on the camera for recording, issue a warning to the operator, turn on the alarm, arm / disarm sensors, block all doors, etc. In response to an event or a certain set of events, you can define any set of system actions - a script. Moreover, using a special scripting language, you can define an arbitrarily complex system reaction to events.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>3.</strong> The ability to integrate any equipment and subsystem, regardless of device type and manufacturer. Integration is carried out through exchange protocols, driver programs, controllers.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>4. </strong>Modularity and open interfaces. The system can be easily expanded both by including new modules, tas well as by integrating the system with existing computerized systems of the enterprise. Additional modules may be developed by security system manufacturers.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>5.</strong> Scalability - no restrictions on the scale of the protected object and the ability to connect any number of workplaces.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>6. </strong>The multi-level (hierarchical) structure of the system makes it possible to rationally distribute information flows between enterprise departments and thereby minimize the amount of transmitted data. Each division receives only those messages that correspond to the official duties and level of responsibility. An alarm message can only be transmitted to the next level of the system if there is no reaction from the responsible personnel after the allowed time has elapsed.</p>
+
+<p>&nbsp;</p>
+
+
+<p>&nbsp;</p>
+
+<p>Designing a modern integrated security system often requires the integration of systems with each other. Each type of integration has its own characteristics and applicability for solving a particular problem.</p>
+
+<p>Let's single out three main types of subsystem integration in a complex security system.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>1. Hardware integration. </strong>Represents the interaction of subsystems at the instrument level, usually without the use of software. In the simplest case, interaction at the hardware level is carried out through relay outputs: the relay of the device of one subsystem affects the inputs of the sensors of the device of another. For example, when a fire alarm system is triggered, a specially configured relay is triggered on the control panel, closing or opening contacts on the fire alarm line of the access controller, which, in turn, goes into fire alarm mode and opens a free passage.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>2. Software integration. </strong>Represents the interaction of security subsystem software with each other. The software integration method is used in cases where integrating systems at the hardware level is either unreasonably difficult or impractical. As a rule, ACS and video surveillance systems are integrated in this way. The subsystems interact with each other via the TCP / IP protocol via a local network.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>3. Hardware-software integration. </strong>This is a mixed case where the hardware of one subsystem is controlled from the software of another. This is how video surveillance systems or access control systems are usually integrated with an alarm system. Interaction is carried out via interface lines using standard protocols (TCP/IP, Modbus, etc.). In this case, special devices are required that combine the subsystems - interface converters, adapters, etc.</p>
+
+<p>&nbsp;</p>
+
+
+<p>&nbsp;</p>
+
+<p>The most common variant of integration links that unite security subsystems is the following.</p>
+
+<p><strong><em>Fire automation systems</em></strong> are interconnected only with the help of hardware integration as one of the simplest and most reliable. The following scenario is being implemented: the fire alarm system is triggered. From the receiving and control device, a signal is sent to the device of the warning and evacuation control system, where the evacuation warning program is triggered. The sound accompaniment and the announcement of a fire through the loudspeakers of the warning system are turned on. In the same way, a signal is sent to the MES control panel using a system of alarm messages via a GSM channel or telephony. Next, the smoke exhaust system is activated, which also received a signal from the fire alarm system. After the time required for the evacuation of personnel and calculated at the stage of commissioning of the system, the fire extinguishing system is activated.</p>
+
+<p>In addition to integrating fire automation systems with each other, it is required to ensure interaction with at least a <strong><em>access control and management system.</em></strong><em> </em>For this, a signal from a fire alarm system the alarm goes to the controllers or the server of the access control and management system, which opens the access points to a free passage mode to ensure quick evacuation of personnel. In this case, it is also advisable to use hardware integration at the relay level due to high reliability and simplicity. When a fire alarm arrives at the access control system server, an alarm event is generated and transmitted to the <strong><em>video surveillance system</em></strong> using software integration links that can perform the following actions:</p>
+
+<p>1. Using the incoming image from surveillance cameras, assess it for the presence of fire and smoke and display the camera data on the full screen to the security service, also start a permanent recording of events.</p>
+
+<p>2. Display video images of escape routesand outputs for the ability to control the PA when using SO-4 and SO-5 and start permanent recording of the signal from these cameras.</p>
+
+<p>3. Display the image from the associated video camera when calling from the feedback panel of the PA.</p>
+
+<p>4. Enable continuous recording from video cameras installed in specially protected premises to register possible actions of intruders in the current turmoil.</p>
+
+<p>&nbsp;</p>
+
+
+<p>In another scenario, when the alarm system is triggered, the following actions can be performed:</p>
+
+<p>1. The <strong><em>security alarm</em></strong> signal is transmitted to the central monitoring station of the security department and the task force leaves.</p>
+
+<p>2. <strong><em>Access control and management system</em></strong> blocks access points leading to the premises where the alarm has gone off and can be opened by the responsible guard.</p>
+
+<p>3. <strong><em>CCTV</em></strong> puts video cameras into continuous recording mode in all corridors and the room where the alarm has been triggered and displays the image from these cameras on the monitor.</p>
+
+<p>&nbsp;</p>
+
+<p>Similar scenarios available when using various integration methods can improve the overall effectiveness of security systems. Making a decision on the use of one or another integration method requires an understanding of the opportunities that this or that integration provides for each specific security system. At the same time, it is important not to lose sight of the problem that needs to be solved using integration.</p>
