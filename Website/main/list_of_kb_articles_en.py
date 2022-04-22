@@ -36,6 +36,10 @@ all_kb_articles_en = {
             'html_page': '/templates/main/knowledge_base/structure_cabling_en.html',
              },
 
+
+}
+
+"""
 'cable_trays': {'article_title': 'Cable Trays Systems',
             'image': "/static/main/png/knowledge_base/cable_trays.jpg",
             'description': 'Cable support systems for security cabling',
@@ -61,8 +65,5 @@ all_kb_articles_en = {
             'page_title': 'Storage System - Knowledge Base Vasily Perevoshchikov',
             'keywords': 'Storage, Storage, Video Surveillance, Security Systems, RAID',
             'html_page': '/templates/main/knowledge_base/disk_system_en.html',
-             },
-
-
-
-}
+             }, 
+"""

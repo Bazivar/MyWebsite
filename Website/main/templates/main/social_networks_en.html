@@ -1,0 +1,49 @@
+{% extends 'main/layout_en.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="Social networks Vasily Perevoshchikov, personal blog" />
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Social media. Personal site of Vasily Perevoshchikov." />
+{% endblock %}
+
+
+{% block links %}
+             <li><a href="{% url 'home_en' %}" ><span></span>Home</a></li>
+             <li><a href="{% url 'articles_en' %}"><span></span>Blog</a></li>
+             <li><a href="{% url 'courses_en' %}"><span></span>Courses</a></li>
+             <li><a href="{% url 'knowledge_base_en' %}"><span></span>Knowledge Base</a></li>
+             <li><a href="{% url 'projects_en' %}"><span></span>My projects</a></li>
+             <li><a href="{% url 'social_networks_en' %}" class="current"><span></span>Me in social networks</a></li>
+             <li><a href="{% url 'about_en' %}"><span></span>About me</a></li>
+{% endblock %}
+
+
+{% block content %}
+    <div id="templatemo_content">
+    <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+        	<div class="post_box">
+
+                <h2>Social networks or where you can find me</h2>
+                <br>
+                <div class="image_wrapper"><img src="{% static 'main/png/my_photo_about.jpg'%}" alt="My photo" /></div>
+              <p align="justify">
+                  <a href="https://www.instagram.com/bazivarro/" target="_parent"><img src="{% static 'main/png/instagram.png'%}" alt="Instagram" /></a>
+                  <a href="https://www.linkedin.com/in/bazivar/" target="_parent"><img src="{% static 'main/png/linkedin.png'%}" alt="LinkedIn" /></a>
+                  <a href="https://www.youtube.com/user/Boyarder" target="_parent"><img src="{% static 'main/png/youtube.png'%}" alt="YouTube" /></a>
+                  <a href="https://github.com/Bazivar" target="_parent"><img src="{% static 'main/png/github.png'%}" alt="GitHub" /></a>
+              </p>
+              <div class="cleaner"></div>
+            </div>
+
+
+
+        </div>
+
+
+{% endblock %}
+

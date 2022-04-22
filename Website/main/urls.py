@@ -11,9 +11,9 @@ urlpatterns = [
     path('knowledge_base', views.knowledge_base, name = 'knowledge_base'),
     path('en/knowledge_base', views.knowledge_base_en, name = 'knowledge_base_en'),
     path('projects', views.projects, name = 'projects'),
-    path('en/projects', views.projects, name = 'projects_en'),
+    path('en/projects', views.projects_en, name = 'projects_en'),
     path('social_networks', views.social_networks, name = 'social_networks'),
-    path('en/social_networks', views.social_networks, name = 'social_networks_en'),
+    path('en/social_networks', views.social_networks_en, name = 'social_networks_en'),
     path('about', views.about, name = 'about'),
     path('en/about', views.about_en, name = 'about_en'),
 

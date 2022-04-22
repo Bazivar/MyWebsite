@@ -37,6 +37,9 @@ all_kb_articles = {
            'html_page': '/templates/main/knowledge_base/structure_cabling.html',
             },
 
+}
+
+'''
 'cable_trays': {'article_title': 'Кабеленесущие системы системы',
            'image': "/static/main/png/knowledge_base/cable_trays.jpg",
            'description': 'Кабеленесущие системы для прокладки кабелей систем безопасности',
@@ -45,6 +48,7 @@ all_kb_articles = {
            'keywords': 'Кабеленесущие системы, КНС, видеонаблюдение, локальная сеть, лотки, металлические кабель-каналы',
            'html_page': '/templates/main/knowledge_base/cable_trays.html',
             },
+
 
 'ups_system': {'article_title': 'Система гарантированного электроснабжения',
            'image': "/static/main/png/knowledge_base/ups_system.jpg",
@@ -64,6 +68,4 @@ all_kb_articles = {
            'html_page': '/templates/main/knowledge_base/disk_system.html',
             },
 
-
-
-}
+'''

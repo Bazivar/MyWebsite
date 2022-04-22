@@ -1,0 +1,164 @@
+{% extends 'main/layout_en.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}
+<meta name="keywords" content="Security systems, projects Perevoshchikov Vasily" />
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Projects Perevoshchikov Vasily. Personal site of Vasily Perevoshchikov. " />
+{% endblock %}
+
+
+{% block links %}
+             <li><a href="{% url 'home_en' %}" ><span></span>Home</a></li>
+             <li><a href="{% url 'articles_en' %}"><span></span>Blog</a></li>
+             <li><a href="{% url 'courses_en' %}" ><span></span>Courses</a></li>
+             <li><a href="{% url 'knowledge_base_en' %}"><span></span>Knowledge Base</a></li>
+             <li><a href="{% url 'projects_en' %}" class="current"><span></span>My projects</a></li>
+             <li><a href="{% url 'social_networks_en' %}"><span></span>Me in social networks</a></li>
+             <li><a href="{% url 'about_en' %}"><span></span>About me</a></li>
+{% endblock %}
+
+
+{% block content %}
+    <div id="templatemo_content">
+            <h1>{% block h1 %}{{ h1 }}{% endblock %}</h1>
+
+        <div class="post_box">
+                <h2><a href="https://www.youtube.com/user/Boyarder">My YouTube channel</a></h2>
+                <div class="news_meta"> Date: September 2019- (in progress) </div>
+                <div class="image_wrapper"><a href="https://www.youtube.com/user/Boyarder" target="_parent"><img width=600 src="{% static 'main/png/project_youtube.png'%}" alt="YouTube" /></a></div>
+              <p align="justify"> The channel started as a resource for recording lectures I gave to students at the university.
+                  <br> The university has run out of steam, but the channel has remained. Now I sometimes post interesting videos, reviews and presentations on it.
+                  <br><br>
+
+          <a href="https://www.youtube.com/user/Boyarder" class="continue">Take a look, it might be interesting-></a></p>
+              <div class="cleaner"></div>
+            </div>
+
+        <div class="post_box">
+                <h2><a href="https://www.unibelus.by/blog/bc4458dd-43cf-4774-a79a-c3df38813179">Complete outdoor cabinets for video surveillance systems</a></h2>
+                <div class="news_meta"> Date: November 2019 - March 2021 </div>
+                <div class="image_wrapper"><a href="https://www.unibelus.by/blog/bc4458dd-43cf-4774-a79a-c3df38813179" target="_parent"><img src="{% static 'main/png/project_box.jpg'%}" alt="" /></a></div>
+              <p align="justify"> Ready-made outdoor cabinets for video surveillance systems. To some extent my opus magnum. This cabinet solves a huge bunch of problems when installing outdoor video surveillance:
+                  <br><br><ul>
+                  <li>Powering the cameras</li>
+                  <li>Protection against condensation inside the cabinet</li>
+                  <li>Least energy consumption during operation</li>
+                  <li>Guaranteed operation for 2 hours in a power outage</li>
+                  <li>High reliability of installed equipment</li>
+                  <li>Equipment lightning protection</li>
+                  <li>Complete set with all accessories</li>
+              </ul>
+
+              <br>
+              See the details on the proekt.by forum and in the Unibelus catalog <br><br>
+          <a href="http://proekt.by/sistemi_bezopasnosti-b9.0/ukomplektovannie_shkafi_dlya_videonablyudeniya_davaiyte_obsudim-t64713.0.html" class="continue">Link to proekt.by-></a></p>
+          <a href="https://www.unibelus.by/items/g31936-videonablyudenie-prinadlezhnosti/g9482-shkafy-dlya-videonablyudeniya?sort_key=popularity&sort_order=desc&productBrands=1956" class="continue">Link to Unibelus catalog - ></a></p>
+              <div class="cleaner"></div>
+            </div>
+
+
+             <div class="post_box">
+                <h2><a href="https://github.com/Bazivar/WebParser">Web parser for information and files from vendor sites</a></h2>
+                <div class="news_meta"> Date: August 2021- (in progress) </div>
+                <div class="image_wrapper"><a href="https://github.com/Bazivar/WebParser" target="_parent"><img src="{% static 'main/png/parser.png'%} "alt="" /></a></div>
+              <p align="justify"> Web version of the application for collecting information from vendors' websites.
+                  <br>Probably my main python and django project <br>
+                  I use it in my current work to fill the base of the nomenclature.
+                  Applied technologies:
+                  <br><br>
+
+              <ul>
+                  <li>Python</li>
+                  <li>BeautifulSoup</li>
+                  <li>django</li>
+                  <li>Jinja</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+              </ul>
+              <br>
+              It helps a lot to speed up the work on adding new positions to the database. See project sources on GitHub <br><br>
+          <a href="https://github.com/Bazivar/WebParser" class="continue">GitHub Link-></a>
+              <div class="cleaner"></div>
+            </div>
+
+        <div class="post_box">
+                <h2><a href="https://github.com/Bazivar/MyWebsite">This site</a></h2>
+                <div class="news_meta"> Date: November 2021- (in progress) </div>
+                <div class="image_wrapper"><a href="https://github.com/Bazivar/MyWebsite" target="_parent"><img src="{% static 'main/png/projects_main.png'%} "alt="" /></a></div>
+              <p align="justify"> I created a site for myself and for myself. I've been thinking about doing this for a long time and finally decided to do it.
+                  I immediately decided to make not just a business card site, but a resource that could be useful not only to me.
+                  The site is based on a news blog, which I modified to display both articles and courses.
+                  What was used when creating the site:
+                  <br><br>
+              <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>django</li>
+                  <li>Jinja</li>
+                  <li>Python</li>
+              </ul>
+              <br>
+              I tried to do without a database to simplify my life on free hosting. See project sources on GitHub <br><br>
+          <a href="https://github.com/Bazivar/MyWebsite" class="continue">GitHub Link-></a>
+              <div class="cleaner"></div>
+            </div>
+
+
+        <div class="post_box">
+                <h2><a href="https://www.unibelus.by/solution/s99">Hybrid alternative energy power plant</a></h2>
+                <div class="news_meta"> Date: September 2021 - November 2021 </div>
+                <div class="image_wrapper"><a href="https://www.unibelus.by/solution/s99" target="_parent"><img src="{% static 'main/png/project_solar.jpg' %}" alt="" /></a></div>
+              <p align="justify"> Integrated technical solution for the creation of a solar and wind power plant.
+                  Designed to power consumers in the absence of external power supply.
+                  What was used to create:
+                  <br><br>
+              <ul>
+                  <li>Data on solar activity at the installation site</li>
+                  <li>Silicon solar panels</li>
+                  <li>Wind generator with neodymium magnets</li>
+                  <li>Solar and wind turbine controllers</li>
+                  <li>Parameter monitoring and remote control system</li>
+              </ul>
+              <br>
+              See the template on the Unibelus website for details <br><br>
+          <a href="https://www.unibelus.by/solution/s99" class="continue">Link to UNB template-></a></p>
+              <div class="cleaner"></div>
+            </div>
+
+
+
+        <div class="post_box">
+                <h2><a href="https://github.com/Bazivar/VendorSitesParcer">Parser of information and files from vendor sites</a></h2>
+                <div class="news_meta"> Date: May-August 2021 </div>
+                <div class="image_wrapper"><a href="https://github.com/Bazivar/VendorSitesParcer" target="_parent"><img src="{% static 'main/png/parser_old.jpg'%} "alt="" /></a></div>
+              <p align="justify"> An application for collecting information from vendors' websites.
+                  The first version of the solution to help yourself in the current work to fill the nomenclature base.
+                  Applied technologies:
+                  <br><br>
+
+              <ul>
+                  <li>Python</li>
+                  <li>BeautifulSoup</li>
+                  <li>Tkinter</li>
+              </ul>
+              <br>
+              Development is currently discontinued. See project sources on GitHub <br><br>
+          <a href="https://github.com/Bazivar/VendorSitesParcer" class="continue">GitHub Link-></a>
+              <div class="cleaner"></div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+{% endblock %}
+

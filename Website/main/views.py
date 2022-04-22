@@ -83,6 +83,13 @@ def projects(request):
     }
     return render(request, 'main/projects.html', data)
 
+def projects_en(request):
+    data = {
+        'title': 'Projects by Vasily Perevoshchikov',
+        'h1': "My projects that I've developed through my career",
+    }
+    return render(request, 'main/projects_en.html', data)
+
 ######################## Social networks #####################################
 def social_networks(request):
     data = {
@@ -90,6 +97,13 @@ def social_networks(request):
         'h1': 'Где можно меня найти',
     }
     return render(request, 'main/social_networks.html', data)
+
+def social_networks_en(request):
+    data = {
+        'title': 'Social networks of Vasily Perevoshchikov',
+        'h1': 'Where can you find me',
+    }
+    return render(request, 'main/social_networks_en.html', data)
 
 ######################## About #####################################
 def about(request):
